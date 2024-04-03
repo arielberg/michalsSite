@@ -75,7 +75,7 @@
       .section2
       {
         width: 350px;
-        margin: 30px auto;
+        margin: 30px auto 0;
         background: rgba(255, 255, 255, 0.7);
         padding: 1px 50px 20px;
         line-height: 29px;
@@ -88,16 +88,75 @@
         width: 75px;
         height: 75px;
       }
+      .humb {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        left: 24px;
+        top: 30px;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+      }
+      #menu {
+        display: none;
+      }
+      #menu.open  {
+        display: block;
+        position: fixed;
+        left: 0;
+        background: rgba(250, 250, 250, 0.7);
+        width: 100vw;
+        text-align: right;
+        top: 95px;
+        padding: 0px 50px;
+      }
+      .menuItem {
+        border-bottom: 2px dotted #000;
+        width: 100%;
+        font-size: 20px;
+      }
   </style>
+  <script>
+    function openMenu(x) {
+      x.classList.toggle("change");
+      document.getElementById('menu').classList.toggle("open");
+    }
+    </script>
 </head>
 <body>
     <div class="container">
         <header class="header">
+          <div class="humb" onclick="openMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
           <div class="logos">
             <img class="shiraLogo logo" src="./shiraLogo.jpg" />
             <img class="michalLogo logo" src="./shiraLogo.jpg" />
           </div>
         </header>
+        <div id="menu">
+          <div class="menuItem">עלינו</div>
+          <div class="menuItem">על התוכנית</div>
+          <div class="menuItem">הוראות הגעה</div>
+        </div>
         <section class="content">
             <p class="hand quote text-center">על הפרי שלא הבשיל עוד ונאסף (נעמי שמר)</p>
             <p class="hand title text-center">ריטריט לעיבוד חווית הפלה</p>
