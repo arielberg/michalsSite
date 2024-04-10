@@ -9,27 +9,37 @@
         /* Basic styles */
         @font-face {
           font-family: dana;
-          src: url(GveretLevinAlefAlefAlef-Regular.woff);
+          src: url(OhAdiOdeyaBaruch-Regular.ttf);
         }
         @font-face {
           font-family: g1;
-          src: url(MPLUS1p-Medium.ttf);
+          src: url(OpenSans_Condensed-SemiBold.ttf);
         }
         
       body {
         font-family: g1, sans-serif;  /* Adjust font family as desired */
+        color: #7D5858;
         direction: rtl;
+	      letter-spacing: 0.5px;
         max-width: 100vw;
+	      text-align: center;
         overflow-x: hidden;
       }
-
       .hand {
         font-family: dana, sans-serif; 
-        font-size: 18px;
-        color:#fff;
+        style: italic;   
+        font-size: 23px;
+        color:white;
+        letter-spacing: 2px;
+        -moz-transform: scaleX(0.8) rotate(0deg) translate(0px, 0px) skew(-40deg, 0deg);
+        -webkit-transform: scaleX(0.8) rotate(0deg) translate(0px, 0px) skew(-40deg, 0deg);
+        -o-transform: scaleX(0.8) rotate(0deg) translate(0px, 0px) skew(-40deg, 0deg);
+        -ms-transform: scaleX(0.8) rotate(0deg) translate(0px, 0px) skew(-40deg, 0deg);
+        transform: scaleX(0.8) rotate(0deg) translate(0px, 0px) skew(-40deg, 0deg);
       }
+
       .hand.title {
-        font-size: 30px;
+        font-size: 45px;
       }
       .header {
         padding: 10px 0;  /* Adjust padding as desired */
@@ -38,26 +48,35 @@
         position: fixed;
         top: 0;
         left: 0;
+        z-index:1;
       }
       .quote {
-        margin-top:20px
+          font-size: 23px;
+          margin-top:20px;
+          margin-bottom:-10px;
+          text-align: justify;  /* Adjust text alignment as desired */
       }
+      
       .title {
-        font-size: 2rem;  /* Adjust font size as desired */
+        font-size: 2.8rem;  /* Adjust font size as desired */
+        margin-bottom:-10px;
       }
 
       .section1 {
+        width: 80%;
         max-width: 350px;
-        margin: 30px auto 0;
-        text-align: justify;  /* Adjust text alignment as desired */
+        margin: 25px auto;
+        line-height: 29px;
       }
 
       .activities {
         margin-top: 1.5rem;  /* Adjust margin as desired */
+        margin-bottom: 1.5rem;
       }
 
       .details {
-        margin-top: 2rem;  /* Adjust margin as desired */
+        margin-top: 1.5rem;  /* Adjust margin as desired */
+        margin-bottom: 1.5rem;
       }
 
       /* Background image */
@@ -74,10 +93,11 @@
 
       .section2
       {
-        width: 350px;
-        margin: 30px auto 0;
-        background: rgba(255, 255, 255, 0.7);
-        padding: 1px 50px 20px;
+        width: 80%;
+        max-width: 850px;
+        margin: 30px auto 1px auto;
+        background: rgba(240, 240, 240, 0.75);
+        padding: 15px;
         line-height: 29px;
       }
       .logos {
@@ -92,6 +112,7 @@
         display: inline-block;
         cursor: pointer;
         position: absolute;
+        z-index:1;
         left: 24px;
         top: 30px;
       }
@@ -99,7 +120,8 @@
       .bar1, .bar2, .bar3 {
         width: 35px;
         height: 5px;
-        background-color: #333;
+        background-color: #888;
+        border-radius: 1.5px;
         margin: 6px 0;
         transition: 0.4s;
       }
@@ -120,16 +142,18 @@
         display: block;
         position: fixed;
         left: 0;
-        background: rgba(250, 250, 250, 0.7);
+        background: rgba(200, 200, 200, 0.7);
         width: 100vw;
         text-align: right;
         top: 95px;
-        padding: 0px 50px;
+        padding: 20px 0 0 0;
+        z-index:1;
       }
       .menuItem {
-        border-bottom: 2px dotted #000;
+        border-bottom: 2px dotted #555;
         width: 100%;
         font-size: 20px;
+        padding: 15px;
       }
   </style>
   <script>
@@ -161,14 +185,14 @@
             <p class="hand quote text-center">על הפרי שלא הבשיל עוד ונאסף (נעמי שמר)</p>
             <p class="hand title text-center">ריטריט לעיבוד חווית הפלה</p>
 
-            <p class="section1">
+            <div class="section2">
+<p class="activities">
                 חלק ממעגל הפיריון מחזיק בתוכו גם אבל ואבדן,
                 ההפלה היא שער רחב שמתרחשים בו דברים עצמתיים בגוף,
                 בנפש וברוח. אם חווית אבדן הריון ואת מרגישה את הצורך
                 להתעגל יחד, בדיוק עבורך בישלנו את הריטריט הזה, שבו
                 ניתן מקום לכל מנעד הרגשות הרחב שעובר בך.
             </p>
-            <div class="section2">
               <div class="activities">
                   ניגע ברחם פיזית ורגשית<br/>
                   נעשה יוגה<br/>
