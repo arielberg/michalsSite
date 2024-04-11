@@ -24,6 +24,7 @@
         max-width: 100vw;
 	      text-align: center;
         overflow-x: hidden;
+        background-image: url("bg5.svg"); 
       }
       .hand {
         font-family: dana, sans-serif; 
@@ -52,7 +53,6 @@
       }
       .quote {
           font-size: 23px;
-          margin-top:20px;
           margin-bottom:-10px;
           text-align: justify;  /* Adjust text alignment as desired */
       }
@@ -78,13 +78,10 @@
 
       /* Background image */
       .container {
-        background-image: url("bg.jpeg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background-color: #777;
         min-height: 100vh;  /* Set minimum height for full viewport */
         min-width: 100vw;
-        margin: 95px 0 0;
+        margin: 85px 0 0;
         padding: 10px 0 0;
       }
 
@@ -171,6 +168,7 @@
         text-align: right;
         font-size: 60px;
         margin-right: -60px;
+        text-shadow: 2px 2px 10px #265;
         color:#7D5858;
       }
       .shira .aboutMeImg, .shira .aboutMeText {
@@ -180,10 +178,37 @@
         text-shadow: 2px 2px 7px #000;
       }
       .content {
-        display: none;
+        background-image: url("bg5.svg"); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        padding-bottom: 75px;
+        background-color: #bce6f5;
       }
+
       .content.show {
         display: block;
+      }
+      /*
+      .content.home {
+        background-image: url("bg.jpeg");      
+      }
+      .content.aboutUs {
+        background-image: url("bg3.jpeg");      
+      }
+      .content.loz {
+        background-image: url("bg4.png");      
+      }
+      .content.qna {
+        background-image: url("bg5.svg");    
+        background-color: #a4b589;
+        fill: blue;  
+      }
+      */
+      
+
+      video {
+        width: 50vw;
       }
   </style>
 </head>
@@ -208,19 +233,98 @@
           <div class="menuItem" data-page="cost">מחיר הריטריט</div>
           <div class="menuItem" data-page="reg">איך נרשמות?</div>
         </div>
-        <section class="content qna">
-          <h3 class="title hand">אם עברו כמה שנים?</h3>
+        <section class="content home show">
+          <p class="hand quote text-center">על הפרי שלא הבשיל עוד ושנאסף (נעמי שמר)</p>
+          <p class="hand title text-center">ריטריט לעיבוד חווית הפלה</p>
+          <object data="devider.svg" type="image/svg+xml"></object>
           <div class="whiteSec">
-          אנו מאמינות שכל מה שעובר ברחם  הוא ככ משמעותי ומותיר איזשהו חותם הן ברחם והן בלב, אנחנו יכולות להזמין את הלב שלנו לתהליך ריפוי גם כעבור כמה שנים.
+            ברוכה הבאה למרחב שהוא בית.<br/>
+            מרחב המאפשר הקשבה פנימית לפעימותייך.<br/>
+            חלק ממעגל הפריון הנשי שלנו מכיל בתוכו גם אבל ואבדן,
+            אם גם את חווית בחייך אבדן הריון, אולי גם את חשת שזה לא סתם עוד אירוע, אלא התרחשות משמעותית שמותירה רשמים בכל הרבדים.<br/>
+            ההפלה היא שער רחב שמתרחשים בו דברים עצמתיים בגוף, בנפש וברוח.<br/>
+            בתרבויות עתיקות נשים נהגו לקיים טקסים של פרידה לאחר האבדן, כדי לאפשר עיבוד וצמיחה.<br/>
+            ובחיים שלנו- לפעמים יש הסתרה סביב הפלה או אולי אפילו ציפיה חברתית לחזור לשגרה כאילו לא קרה דבר.<br/>
+            בדיוק בשל כך בישלנו עבורך את הריטריט הזה, ויצרנו הזדמנות לעצור רגע את שטף החיים, 
+            להתחבר בתשומת לב פנימה לדבר הענק שהתרחש ברחם ולתת מקום לכל מנעד הרגשות הרחב שעבר ועוד עובר בך. להקשיב למה שיש לרחם לספר לך ולאפשר הזדמנות לריפוי.<br/>
+            מזמינות אותך באהבה  להתכנס איתנו, שבט נשים ״שעברו את זה״, שמבינות זו את זו, לגעת בכאב בידיים אמיצות ועיניים רגישות.<br/>
+            אשה אל אשה- רחם אל רחם,
+            להתבונן בשער שנפתח בפנינו בעקבות ה״לידה הקטנה״ שעברנו.<br/>
+            <br/>
+            אז מתאים לך לצלול איתנו פנימה?<br/>
+            <br/>
+            מה הולך להיות?<br/>
+            ניפגש בחוות קשואלה הקסומה, ניגע ברחם פיזית ורגשית, נעשה יוגה, נשיל את המיותר, ניקח זמן קצר להתבודדות בין עצי אקליפטוס, ונהנה מכל מה שיש ליער להציע לנו- אדמה טובה, אויר צלול, שבט נשים, ארוחה מזינה וצמחונית <br/>(חלבית עם מגוון פרווה- דאגנו לכך שגם אם את טבעונית תמצאי שפע מזין ולא תישארי רעבה 😊)
           </div>
-          <h3 class="title hand">ואם אני בהריון?</h3>
+          
+      </section>
+      <section class="content aboutUs">
+        <h3 class="title hand">קצת עלינו</h3>
+        <div class="whiteSec">
+          <div class="me michal">
+            <h3 class="hand">מיכל ברג</h3>
+            <img class="aboutMeImg" src="./michal.jpeg" />
+            <div class="aboutMeText">
+            מי אני?<br/>
+            אמא ל-6 מתוקים, דולה, מדריכת הכנה ללידה, מלווה נשים סביב הפלות, מתעסקת בתנועה, תלמידה ותיקה של שיטת ימימה, חיה ונושמת ליווי של נשים סביב מעגל הפוריות
+            </div>
+          </div>
+          <div class="me shira">
+            <h3 class="hand">שירה גולדשטיין</h3>
+            <img class="aboutMeImg" src="./shira.jpeg" />
+            <div class="aboutMeText">
+              אני שירה, מורה ליוגה, מקיימת אורח חיים יוגי, אמנית רב תחומית, חוקרת נשיות הוליסטית בדרך הטבע ובדרך תורותיו של רשב״י.
+              בגיל 14 היוגה שינתה את חיי מקצה לקצה, הבנתי שזה חלק ממהותי הנשמתית ומאז אני לא מפסיקה לתרגל ולהתחדש, ומביאה איתי את היוגה לכל מקום בו יש נשים.
+              היוגה שלי משנה את פניה כל פעם קצת, בהתאם לעונות של האדמה, הרחם והלב.</div>
+          </div>
+        </div>
+      </section>
+      <section class="content loz">
+          <h3 class="title hand">לו"ז מפורט</h3>
           <div class="whiteSec">
-            בשעה טובה🩷 את יכולה לקחת את הריטריט הזה בתור הזדמנות שתתן רגע פוקוס על נקודה אחרת שחווית במעגל הפיריון באופן שתוכלי לתת מקום להריון שאבד ולסגור אותו, ולעשות מקום לחיים החדשים הפועמים בך.
+            9:00 התכנסות, נשנושים ומעגל פתיחה<br/>
+            10:00 יוגה ופתיחת צ׳אקרות<br/>
+            11:00 עיסוי רחם וכתיבה אינטואיטיבית<br/>
+            12:00 הפסקת אוכל- ארוחה טעימה ועשירה <br/>
+            13:00 טקסטים מעוררי השראה מרחבי העולם ופתיחת קלפים על נשיות.<br/>
+            13:30 תנועה פורקת אנרגיה <br/>
+            14:00 יציאה ליער<br/>
+            14:20 מעגל סיום וסגירה<br/>
+            15:00 חיבוקים וחזרה הביתה עם מתנות מן הטבע<br/>
           </div>
-        </section>
+      </section>
+      <section class="content qna">
+        <h3 class="title hand">אם עברו כמה שנים?</h3>
+        <div class="whiteSec">
+        אנו מאמינות שכל מה שעובר ברחם  הוא ככ משמעותי ומותיר איזשהו חותם הן ברחם והן בלב, אנחנו יכולות להזמין את הלב שלנו לתהליך ריפוי גם כעבור כמה שנים.
+        </div>
+        <h3 class="title hand">ואם אני בהריון?</h3>
+        <div class="whiteSec">
+          בשעה טובה🩷 את יכולה לקחת את הריטריט הזה בתור הזדמנות שתתן רגע פוקוס על נקודה אחרת שחווית במעגל הפיריון באופן שתוכלי לתת מקום להריון שאבד ולסגור אותו, ולעשות מקום לחיים החדשים הפועמים בך.
+        </div>
+      </section>
+
+
         <section class="content map">
-          <h3 class="title hand">איך מגיעים?</h3>
-          <iframe src="https://embed.waze.com/iframe?zoom=16&lat=31.676030&lon=35.101852&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+          <h3 class="title hand">מיקום בוויז</h3>
+          <br/><br/>
+          <a href="https://ul.waze.com/ul?preview_venue_id=23003453.230034528.122788&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">
+            חוות קשואלה
+          </a>
+          <video playsinline autoplay muted loop poster="cbg1ake.jpg">
+            <source src="bg1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          </section>
+        <section class="content cost">
+          <h3 class="title hand">מחיר הריטריט</h3>
+            <div class="whiteSec">
+              הפעם אנו מציעות את הריטריט במחיר הכרות לרגל הפעם הראשונה-<br/>
+              רק 350 שח במקום 470 מחיר רגיל.<br/>
+              אם את מהירת החלטה תהני בנוסף ממחיר של הרשמה מוקדמת:<br/>
+              300 שח לנרשמות עד ה 15.5 ז' אייר<br/>
+              350 שח לנרשמות החל מה 16.5 ח' אייר.
+            </div>
         </section>
         <section class="content reg">
           <h3 class="title hand">איך נרשמות?</h3>
@@ -234,74 +338,8 @@
           
         </div>
         </section>
-        <section class="content cost">
-          <h3 class="title hand">מחיר הריטריט</h3>
-            <div class="whiteSec">
-              הפעם אנו מציעות את הריטריט במחיר הכרות לרגל הפעם הראשונה-<br/>
-              רק 350 שח במקום 470 מחיר רגיל.<br/>
-              אם את מהירת החלטה תהני בנוסף ממחיר של הרשמה מוקדמת:<br/>
-              300 שח לנרשמות עד ה 15.5 ז' אייר<br/>
-              350 שח לנרשמות החל מה 16.5 ח' אייר.
-            </div></section>
-        <section class="content loz">
-          <h3 class="title hand">לוח זמנים</h3>
-          <div class="whiteSec">
-            9:00 התכנסות, נשנושים ומעגל פתיחה<br/>
-            10:00 יוגה ופתיחת צ׳אקרות<br/>
-            11:00 עיסוי רחם וכתיבה אינטואיטיבית<br/>
-            12:00 הפסקת אוכל- ארוחה טעימה ועשירה <br/>
-            13:00 טקסטים מעוררי השראה מרחבי העולם ופתיחת קלפים על נשיות.<br/>
-            13:30 תנועה פורקת אנרגיה <br/>
-            14:00 יציאה ליער<br/>
-            14:20 מעגל סיום וסגירה<br/>
-            15:00 חיבוקים וחזרה הביתה עם מתנות מן הטבע<br/>
-          </div>
-        </section>
-        <section class="content aboutUs">
-          <h3 class="title hand">קצת עלינו</h3>
-          <div class="whiteSec">
-            <div class="me michal">
-              <h3 class="hand">מיכל ברג</h3>
-              <img class="aboutMeImg" src="./michal.jpeg" />
-              <div class="aboutMeText">
-              מי אני?<br/>
-              אמא ל-6 מתוקים, דולה, מדריכת הכנה ללידה, מלווה נשים סביב הפלות, מתעסקת בתנועה, תלמידה ותיקה של שיטת ימימה, חיה ונושמת ליווי של נשים סביב מעגל הפוריות
-              </div>
-            </div>
-            <div class="me shira">
-              <h3 class="hand">שירה גולדשטיין</h3>
-              <img class="aboutMeImg" src="./shira.jpeg" />
-              <div class="aboutMeText">
-                אני שירה, מורה ליוגה, מקיימת אורח חיים יוגי, אמנית רב תחומית, חוקרת נשיות הוליסטית בדרך הטבע ובדרך תורותיו של רשב״י.
-                בגיל 14 היוגה שינתה את חיי מקצה לקצה, הבנתי שזה חלק ממהותי הנשמתית ומאז אני לא מפסיקה לתרגל ולהתחדש, ומביאה איתי את היוגה לכל מקום בו יש נשים.
-                היוגה שלי משנה את פניה כל פעם קצת, בהתאם לעונות של האדמה, הרחם והלב.</div>
-            </div>
-          </div>
-        </section>
-        <section class="content home show">
-            <p class="hand quote text-center">על הפרי שלא הבשיל עוד ונאסף (נעמי שמר)</p>
-            <p class="hand title text-center">ריטריט לעיבוד חווית הפלה</p>
+        
 
-            <div class="whiteSec">
-              ברוכה הבאה למרחב שהוא בית.<br/>
-              מרחב המאפשר הקשבה פנימית לפעימותייך.<br/>
-              חלק ממעגל הפריון הנשי שלנו מכיל בתוכו גם אבל ואבדן,
-              אם גם את חווית בחייך אבדן הריון, אולי גם את חשת שזה לא סתם עוד אירוע, אלא התרחשות משמעותית שמותירה רשמים בכל הרבדים.<br/>
-              ההפלה היא שער רחב שמתרחשים בו דברים עצמתיים בגוף, בנפש וברוח.<br/>
-              בתרבויות עתיקות נשים נהגו לקיים טקסים של פרידה לאחר האבדן, כדי לאפשר עיבוד וצמיחה.<br/>
-              ובחיים שלנו- לפעמים יש הסתרה סביב הפלה או אולי אפילו ציפיה חברתית לחזור לשגרה כאילו לא קרה דבר.<br/>
-              בדיוק בשל כך בישלנו עבורך את הריטריט הזה, ויצרנו הזדמנות לעצור רגע את שטף החיים, 
-              להתחבר בתשומת לב פנימה לדבר הענק שהתרחש ברחם ולתת מקום לכל מנעד הרגשות הרחב שעבר ועוד עובר בך. להקשיב למה שיש לרחם לספר לך ולאפשר הזדמנות לריפוי.<br/>
-              מזמינות אותך באהבה  להתכנס איתנו, שבט נשים ״שעברו את זה״, שמבינות זו את זו, לגעת בכאב בידיים אמיצות ועיניים רגישות.<br/>
-              אשה אל אשה- רחם אל רחם,
-              להתבונן בשער שנפתח בפנינו בעקבות ה״לידה הקטנה״ שעברנו.<br/>
-              <br/>
-              אז מתאים לך לצלול איתנו פנימה?<br/>
-              <br/>
-              מה הולך להיות?<br/>
-              ניפגש בחוות קשואלה הקסומה, ניגע ברחם פיזית ורגשית, נעשה יוגה, נשיל את המיותר, ניקח זמן קצר להתבודדות בין עצי אקליפטוס, ונהנה מכל מה שיש ליער להציע לנו- אדמה טובה, אויר צלול, שבט נשים, ארוחה מזינה וצמחונית <br/>(חלבית עם מגוון פרווה- דאגנו לכך שגם אם את טבעונית תמצאי שפע מזין ולא תישארי רעבה 😊)
-            </div>
-        </section>
     </div>
     <script>
       function openMenu(x) {
