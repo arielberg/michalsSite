@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon-x32.png" sizes="32x32"> 
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"> 
     <title>Women's Retreat</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
@@ -18,13 +20,18 @@
         
       body {
         font-family: g1, sans-serif;  /* Adjust font family as desired */
-        color: #7D5858;
+        color: #7a6652;
         direction: rtl;
+        font-size:13px;
 	      letter-spacing: 0.5px;
         max-width: 100vw;
 	      text-align: center;
         overflow-x: hidden;
-        background-image: url("bg5.svg"); 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+	      background-image: url("bg.jpeg");
       }
       .hand {
         font-family: dana, sans-serif; 
@@ -54,6 +61,7 @@
       .quote {
           font-size: 23px;
           margin-bottom:-10px;
+	  padding-top:30px;
           text-align: justify;  /* Adjust text alignment as desired */
       }
 
@@ -78,7 +86,6 @@
 
       /* Background image */
       .container {
-        background-color: #777;
         min-height: 100vh;  /* Set minimum height for full viewport */
         min-width: 100vw;
         margin: 85px 0 0;
@@ -90,16 +97,14 @@
         width: 80%;
         max-width: 850px;
         margin: 30px auto 1px auto;
-        background: rgba(240, 240, 240, 0.75);
-        padding: 15px;
-        line-height: 29px;
+        background: rgba(240, 240, 240, 1);
+        padding: 35px;
+        line-height: 20px;
       }
       .logos {
-        width:160px;
         margin:0 auto;
       }
       .logo {
-        width: 75px;
         height: 75px;
       }
       .humb {
@@ -145,70 +150,57 @@
       }
       .menuItem {
         border-bottom: 2px solid #eee;
+	scroll-behavior: smooth;
         width: 100%;
         font-size: 20px;
         padding: 15px 50px;
         cursor: pointer;
       }
+   .menuItem  a {
+	color: #555;
+	text-decoration: none;
+	}
       .aboutMeImg {
+	border-radius: 50%;
         width: 35%;
-        display: inline-block;
+	margin: 10px;
       }
-      .aboutMeText {
-        display: inline-block;
-        max-width: 64%;
-        vertical-align: top;
-        text-align: right;
-        padding: 0 25px 0 0;
-      }
+      .aboutMeText {}
       .me {
-        margin-bottom:20px;
+        margin-bottom:30px;
       }
       .me h3 { 
-        text-align: right;
-        font-size: 60px;
-        margin-right: -60px;
-        text-shadow: 2px 2px 10px #265;
+       margin:0;
+        font-size: 50px;
         color:#7D5858;
       }
-      .shira .aboutMeImg, .shira .aboutMeText {
-        width: 49%;
-      }
+
       h3.title {
-        text-shadow: 2px 2px 7px #000;
+	margin-bottom: 30px;
+        font-size: 50px;
+        color:#7D5858;
       }
       .content {
-        background-image: url("bg5.svg"); 
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; 
-        padding-bottom: 75px;
-        background-color: #bce6f5;
+        padding-bottom: 40px;
       }
 
       .content.show {
         display: block;
       }
-      /*
-      .content.home {
-        background-image: url("bg.jpeg");      
-      }
-      .content.aboutUs {
-        background-image: url("bg3.jpeg");      
-      }
-      .content.loz {
-        background-image: url("bg4.png");      
-      }
-      .content.qna {
-        background-image: url("bg5.svg");    
-        background-color: #a4b589;
-        fill: blue;  
-      }
-      */
       
+      .content.home {
+      }
+
+      br {
+        content: "";
+        margin: 2em;
+        display: block;
+        font-size: 50%;
+      }
 
       video {
-        width: 50vw;
+        width: 100%;
+	     height:200px;
       }
   </style>
 </head>
@@ -226,12 +218,12 @@
           </div>
         </header>
         <div id="menu">
-          <div class="menuItem" data-page="aboutUs">מי אנחנו</div>
-          <div class="menuItem" data-page="loz">לו״ז מפורט</div>
-          <div class="menuItem" data-page="qna">ואם עברו כמה שנים?</div>
-          <div class="menuItem" data-page="map">מיקום בוואיז</div>
-          <div class="menuItem" data-page="cost">מחיר הריטריט</div>
-          <div class="menuItem" data-page="reg">איך נרשמות?</div>
+          <div class="menuItem" data-page="aboutUs"> <a href="#section1">מי אנחנו</a></div>
+          <div class="menuItem" data-page="loz"> <a href="#section2">לו״ז מפורט</a></div>
+          <div class="menuItem" data-page="qna"> <a href="#section3">ואם עברו כמה שנים?</a></div>
+          <div class="menuItem" data-page="map"> <a href="#section4">מיקום בוואיז</a></div>
+          <div class="menuItem" data-page="cost"> <a href="#section5">מחיר הריטריט</a></div>
+          <div class="menuItem" data-page="reg"> <a href="#section6">איך נרשמות?</a></div>
         </div>
         <section class="content home show">
           <p class="hand quote text-center">על הפרי שלא הבשיל עוד ושנאסף (נעמי שמר)</p>
@@ -255,11 +247,13 @@
             <br/>
             מה הולך להיות?<br/>
             ניפגש בחוות קשואלה הקסומה, ניגע ברחם פיזית ורגשית, נעשה יוגה, נשיל את המיותר, ניקח זמן קצר להתבודדות בין עצי אקליפטוס, ונהנה מכל מה שיש ליער להציע לנו- אדמה טובה, אויר צלול, שבט נשים, ארוחה מזינה וצמחונית <br/>(חלבית עם מגוון פרווה- דאגנו לכך שגם אם את טבעונית תמצאי שפע מזין ולא תישארי רעבה 😊)
-          </div>
+      	<div id="section1">
+      	</div>
+          	</div>
           
       </section>
       <section class="content aboutUs">
-        <h3 class="title hand">קצת עלינו</h3>
+
         <div class="whiteSec">
           <div class="me michal">
             <h3 class="hand">מיכל ברג</h3>
@@ -276,12 +270,14 @@
               אני שירה, מורה ליוגה, מקיימת אורח חיים יוגי, אמנית רב תחומית, חוקרת נשיות הוליסטית בדרך הטבע ובדרך תורותיו של רשב״י.
               בגיל 14 היוגה שינתה את חיי מקצה לקצה, הבנתי שזה חלק ממהותי הנשמתית ומאז אני לא מפסיקה לתרגל ולהתחדש, ומביאה איתי את היוגה לכל מקום בו יש נשים.
               היוגה שלי משנה את פניה כל פעם קצת, בהתאם לעונות של האדמה, הרחם והלב.</div>
-          </div>
         </div>
+        	<div id="section2"></div>
+	</div>
       </section>
       <section class="content loz">
-          <h3 class="title hand">לו"ז מפורט</h3>
+	<div id="section2">
           <div class="whiteSec">
+	   <h3 class="title hand">לו"ז מפורט</h3>
             9:00 התכנסות, נשנושים ומעגל פתיחה<br/>
             10:00 יוגה ופתיחת צ׳אקרות<br/>
             11:00 עיסוי רחם וכתיבה אינטואיטיבית<br/>
@@ -291,21 +287,21 @@
             14:00 יציאה ליער<br/>
             14:20 מעגל סיום וסגירה<br/>
             15:00 חיבוקים וחזרה הביתה עם מתנות מן הטבע<br/>
-          </div>
+         <div id="section3"></div>
+	</div>
       </section>
       <section class="content qna">
-        <h3 class="title hand">אם עברו כמה שנים?</h3>
+	<div id="section3">
         <div class="whiteSec">
+	<h3 class="title hand">אם עברו כמה שנים?</h3>
         אנו מאמינות שכל מה שעובר ברחם  הוא ככ משמעותי ומותיר איזשהו חותם הן ברחם והן בלב, אנחנו יכולות להזמין את הלב שלנו לתהליך ריפוי גם כעבור כמה שנים.
-        </div>
         <h3 class="title hand">ואם אני בהריון?</h3>
-        <div class="whiteSec">
           בשעה טובה🩷 את יכולה לקחת את הריטריט הזה בתור הזדמנות שתתן רגע פוקוס על נקודה אחרת שחווית במעגל הפיריון באופן שתוכלי לתת מקום להריון שאבד ולסגור אותו, ולעשות מקום לחיים החדשים הפועמים בך.
-        </div>
+           <div id="section4"></div>
+	</div>
       </section>
-
-
         <section class="content map">
+	<div class="whiteSec">
           <h3 class="title hand">מיקום בוויז</h3>
           <br/><br/>
           <a href="https://ul.waze.com/ul?preview_venue_id=23003453.230034528.122788&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">
@@ -315,27 +311,29 @@
             <source src="bg1.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          </section>
+	<div id="section5"></div>
+	</div>
+        </section>
         <section class="content cost">
-          <h3 class="title hand">מחיר הריטריט</h3>
             <div class="whiteSec">
+	    <h3 class="title hand">מחיר הריטריט</h3>
               הפעם אנו מציעות את הריטריט במחיר הכרות לרגל הפעם הראשונה-<br/>
               רק 350 שח במקום 470 מחיר רגיל.<br/>
               אם את מהירת החלטה תהני בנוסף ממחיר של הרשמה מוקדמת:<br/>
               300 שח לנרשמות עד ה 15.5 ז' אייר<br/>
               350 שח לנרשמות החל מה 16.5 ח' אייר.
-            </div>
+	<div id="section6"></div>
+             </div>
         </section>
         <section class="content reg">
-          <h3 class="title hand">איך נרשמות?</h3>
           <div class="whiteSec">
+ 	 <h3 class="title hand">איך נרשמות?</h3>
           את יכולה לכתוב ווצאפ לאחת מאיתנו<br/><br/>
           מיכל- 050-8193588<br/>
           שירה- 050-5803600<br/>
           תשלום בקבוצת הפייבוקס ממש 
           <a href=''>כאן</a>
           <br/>
-          
         </div>
         </section>
         
